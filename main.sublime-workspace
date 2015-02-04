@@ -1,0 +1,761 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"FormatInt	string ƒ"
+			],
+			[
+				"log",
+				"logFile	*os.File ν"
+			],
+			[
+				"cou",
+				"county	*County ν"
+			],
+			[
+				"c",
+				"Counties	map[int]*County ν"
+			],
+			[
+				"O",
+				"O_CREATE	 Ɩ"
+			],
+			[
+				"o",
+				"O_RDWR	 Ɩ"
+			],
+			[
+				"op",
+				"OpenFile	file *os.File, err error ƒ"
+			],
+			[
+				"get",
+				"GetProvinces	 ƒ"
+			],
+			[
+				"pre",
+				"provCode	int ν"
+			],
+			[
+				"ge",
+				"GetStation	 ƒ"
+			],
+			[
+				"l",
+				"Lon	float64 ν"
+			],
+			[
+				"fun",
+				"func (*EMSData)	func (...) {...} ʂ"
+			],
+			[
+				"func",
+				"func (*Station)	func (...) {...} ʂ"
+			],
+			[
+				"Ge",
+				"GeoRespone	struct ʈ"
+			],
+			[
+				"lo",
+				"Logger	log.Logger ν"
+			],
+			[
+				"res",
+				"res	Location ν"
+			],
+			[
+				"fs",
+				"Fscanf	n int, err error ƒ"
+			],
+			[
+				"p",
+				"ParseInt	i int64, err error ƒ"
+			],
+			[
+				"P",
+				"ParseInt	i int64, err error ƒ"
+			],
+			[
+				"co",
+				"Coordinate	struct ʈ"
+			],
+			[
+				"s",
+				"stations	map[int]Station ν"
+			],
+			[
+				"sta",
+				"stations	map[int]Station ν"
+			],
+			[
+				"re",
+				"request	*http.Request ν"
+			],
+			[
+				"pri",
+				"Println	 ƒ"
+			],
+			[
+				"border-co",
+				"border-collapse"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"unl",
+				"unlikelyMatchString"
+			],
+			[
+				"inn",
+				"innerText"
+			],
+			[
+				"text",
+				"textContent"
+			],
+			[
+				"err",
+				"errorFn"
+			],
+			[
+				"post",
+				"postbody"
+			],
+			[
+				"nextpa",
+				"nextPageBody"
+			],
+			[
+				"Pr",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"imp",
+				"import	import (...) ʂ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 70,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/gexf.xsd",
+			"settings":
+			{
+				"buffer_size": 3386,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/data.xsd",
+			"settings":
+			{
+				"buffer_size": 6276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/dynamics.xsd",
+			"settings":
+			{
+				"buffer_size": 1564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/hierarchy.xsd",
+			"settings":
+			{
+				"buffer_size": 384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/phylogenics.xsd",
+			"settings":
+			{
+				"buffer_size": 870,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/viz.xsd",
+			"settings":
+			{
+				"buffer_size": 5136,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 148.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Code/Go/src/mervin.me/gexf4go"
+	],
+	"file_history":
+	[
+		"/E/Code/Go/src/mervin.me/gexf4go/doc/gexf-1.2/gexf.rng",
+		"/E/Code/Go/src/mervin.me/gexf4go/doc/gexf-1.2/gexf.rnc",
+		"/E/Code/Go/src/mervin.me/test/us.html",
+		"/E/Code/Go/src/mervin.me/cn-post-network/emsExtract-bak.go",
+		"/C/Program Files/Sublime Text 3/Data/Packages/SublimeTmpl/Main.sublime-menu",
+		"/E/Code/Java/Lizard/data/02.txt",
+		"/E/work/test.edges",
+		"/E/work/extractor/r/index.htm",
+		"/C/Users/mervin/.ssh/id_rsa.pub",
+		"/E/work/cn-tree/springy.js",
+		"/E/work/extractor/r/kindle.php",
+		"/C/Users/mervin/Downloads/readability-0.5.1/js/readability-start.js",
+		"/C/Users/mervin/Downloads/readability-0.5.1/js/readability.js",
+		"/C/Users/mervin/Downloads/boilerpipe-1.2.0/src/main/de/l3s/boilerpipe/extractors/ExtractorBase.java",
+		"/C/Program Files (x86)/Gephi-0.8.2/etc/gephi.conf",
+		"/C/Users/mervin/Desktop/t.html",
+		"/C/Program Files/Sublime Text 3/Data/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/Markdown (Standard).sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/Bold and Italic Markers.tmPreferences",
+		"/E/work/InterGrid-Control/USpowerGrid.net",
+		"/E/Code/Go/src/github.com/aeden/traceroute/cmd/gotraceroute.go",
+		"/E/Code/test/md1/README.md",
+		"/E/Code/test/md1/HELP.md",
+		"/C/Users/mervin/Downloads/Central Idea.json",
+		"/E/temp/users.auth.php",
+		"/G/Code/python/ASRank/common.py",
+		"/G/Code/python/ASRank/down.py",
+		"/G/Code/python/ASRank/test.py",
+		"/G/Code/python/ASRank/extract_rib.py",
+		"/G/Code/python/ASRank/download.py",
+		"/E/work/net-in-net/data/RV-list.txt",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/Pylinter.sublime-settings",
+		"/G/Code/python/ASRank/Wearth.py",
+		"/E/Code/Go/src/mervin.me/LizardGo/main.go",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/pep8_autoformat.sublime-settings",
+		"/E/Code/Go/src/mervin.me/LizardGo/network/edge/edge_container.go",
+		"/C/Users/mervin/Desktop/caida-ip-4-down.sh",
+		"/G/data/net/20010801.as-rel.txt",
+		"/E/Code/Go/src/mervin.me/test/main.go",
+		"/E/Code/Go/src/mervin.me/test/test.manifest",
+		"/C/Users/mervin/AppData/Local/Youdao/YNote/log/YoudaoNote.exe.log",
+		"/C/Users/mervin/AppData/Local/Youdao/YNote/log/RunYNote.exe.log",
+		"/C/Users/mervin/Desktop/InterGrid-Control/power.gml",
+		"/G/share/data/bview.20140101.000.2000.txt",
+		"/G/share/data/updates.20100304.0000.2.txt",
+		"/H/data/asn/6695.txt",
+		"/F/Data/PCH/localhost.localdomain-ipv4_bgp_routes.2012.11.18",
+		"/H/data/asn/12874.txt",
+		"/C/Program Files/Sublime Text 3/Data/Packages/GoSublime/GoSublime.sublime-settings",
+		"/C/Program Files/Sublime Text 3/Data/Packages/GoSublime/CHANGELOG.md",
+		"/C/Program Files/Sublime Text 3/Data/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"break",
+			"GetCoor",
+			"GetCoor	",
+			"this.Logger",
+			"Logger",
+			"error",
+			"run",
+			"fun",
+			"GeoBody",
+			"808644783516",
+			"n",
+			"body",
+			"Results",
+			"jar",
+			"Name",
+			"result",
+			"la",
+			"cleanHeaders",
+			"cleanConditionally",
+			"getCharCount",
+			"clean",
+			"cleanConditionally",
+			"removeFrame",
+			"htmlspecialchars",
+			"getCharCount",
+			"initializeNode",
+			"getClassWeight",
+			"table",
+			"TEXT_NODE",
+			"grabArticle",
+			"initializeNode",
+			"frameHack",
+			"prepDocument",
+			"readStyle",
+			"prepDocument",
+			"readStyle",
+			"getInnerText",
+			"github",
+			"getInnerText",
+			"getArticleFooter",
+			"grabArticle",
+			"getArticleTitle",
+			"getArticleTools",
+			"prepDocument",
+			"_corsipb604520",
+			"x.send",
+			"x",
+			"tzd",
+			"saved",
+			"http",
+			"POST",
+			"write",
+			"GetFileAttributesEx",
+			"D:/Python27/",
+			"-x $proxy",
+			"ORIGIN"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"Logger",
+			"C:/Program Files/python/",
+			"C:/Program Files/python",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "README.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown (Standard).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "doc/gexf-1.2/gexf.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1612,
+								1612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "doc/gexf-1.2/data.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2123,
+								2123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "doc/gexf-1.2/dynamics.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "doc/gexf-1.2/hierarchy.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "doc/gexf-1.2/phylogenics.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "doc/gexf-1.2/viz.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.139763779528,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o://C:\\Program Files\\Sublime Text 3":
+	{
+		"height": 100.0
+	},
+	"output.9o://C:\\Program Files\\Sublime Text 3\\Data\\Packages\\User":
+	{
+		"height": 291.0
+	},
+	"output.9o://E:\\Code\\Go\\src\\github.com\\aeden\\traceroute":
+	{
+		"height": 96.0
+	},
+	"output.9o://E:\\Code\\Go\\src\\github.com\\aeden\\traceroute\\cmd":
+	{
+		"height": 285.0
+	},
+	"output.9o://E:\\Code\\Go\\src\\mervin.me\\cn-post-network":
+	{
+		"height": 100.0
+	},
+	"output.9o://E:\\Code\\Go\\src\\mervin.me\\test":
+	{
+		"height": 215.0
+	},
+	"output.9o://G:\\Code\\python\\ASRank":
+	{
+		"height": 361.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 156.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
