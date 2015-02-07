@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"func (*MetaDoc)	func (...) {...} ʂ"
+			],
+			[
+				"ed",
+				"EdgeType	uint8 ʈ"
+			],
+			[
+				"att",
+				"AttrType	uint8 ν"
+			],
+			[
+				"e",
+				"EdgeType	uint8 ʈ"
+			],
+			[
+				"Edge",
+				"EdgeType	uint8 ʈ"
+			],
+			[
 				"f",
 				"FormatInt	string ƒ"
 			],
@@ -46,10 +66,6 @@
 			[
 				"l",
 				"Lon	float64 ν"
-			],
-			[
-				"fun",
-				"func (*EMSData)	func (...) {...} ʂ"
 			],
 			[
 				"func",
@@ -156,13 +172,6 @@
 	"buffers":
 	[
 		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "README.md",
 			"settings":
 			{
@@ -179,34 +188,98 @@
 			}
 		},
 		{
-			"file": "doc/gexf-1.2/gexf.xsd",
+			"file": "gexf.go",
 			"settings":
 			{
-				"buffer_size": 3265,
+				"buffer_size": 2867,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/work/JIA/ipv6_nodes_num.num",
+			"settings":
+			{
+				"buffer_size": 663,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "doc/gexf-1.2/data.xsd",
+			"file": "node.go",
 			"settings":
 			{
-				"buffer_size": 5986,
+				"buffer_size": 421,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "edge.go",
+			"settings":
+			{
+				"buffer_size": 769,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "attribute.go",
+			"settings":
+			{
+				"buffer_size": 1072,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "visualization.go",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/rnc/gexf.rnc",
+			"settings":
+			{
+				"buffer_size": 2103,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "doc/gexf-1.2/dynamics.xsd",
+			"file": "doc/gexf-1.2/rnc/data.rnc",
 			"settings":
 			{
-				"buffer_size": 1504,
+				"buffer_size": 1295,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "doc/gexf-1.2/phylogenics.xsd",
+			"file": "doc/gexf-1.2/rnc/dynamics.rnc",
 			"settings":
 			{
-				"buffer_size": 844,
+				"buffer_size": 2050,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/rnc/hierarchy.rnc",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/rnc/phylogenics.rnc",
+			"settings":
+			{
+				"buffer_size": 455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/rnc/viz.rnc",
+			"settings":
+			{
+				"buffer_size": 3271,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,10 +292,50 @@
 			}
 		},
 		{
-			"file": "/C/Program Files/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+			"file": "/E/Code/Go/src/mervin.me/cn-post-network/xml.go",
 			"settings":
 			{
-				"buffer_size": 149,
+				"buffer_size": 2362,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/phylogenics.xsd",
+			"settings":
+			{
+				"buffer_size": 844,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/dynamics.xsd",
+			"settings":
+			{
+				"buffer_size": 1504,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/data.xsd",
+			"settings":
+			{
+				"buffer_size": 5986,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/hierarchy.xsd",
+			"settings":
+			{
+				"buffer_size": 382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "doc/gexf-1.2/gexf.xsd",
+			"settings":
+			{
+				"buffer_size": 3265,
 				"line_ending": "Unix"
 			}
 		}
@@ -274,9 +387,12 @@
 	],
 	"file_history":
 	[
+		"/E/work/JIA/test3.txt",
+		"/E/work/JIA/curve_fit.m",
 		"/C/Program Files/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
-		"/E/Code/Go/src/mervin.me/gexf4g/doc/gexf-1.2/hierarchy.xsd",
+		"/E/Code/Go/src/mervin.me/gexf4g/doc/gexf-1.2/rnc/viz.rnc",
 		"/C/Program Files/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/E/Code/Go/src/mervin.me/gexf4g/doc/gexf-1.2/hierarchy.xsd",
 		"/E/Code/Go/src/mervin.me/gexf4go/doc/gexf-1.2/gexf.rng",
 		"/E/Code/Go/src/mervin.me/gexf4go/doc/gexf-1.2/gexf.rnc",
 		"/E/Code/Go/src/mervin.me/test/us.html",
@@ -347,6 +463,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"token",
+			", omitempty",
+			"time-type",
+			"timeformat-type",
+			"defaultedgetype-type",
+			"Doc",
+			"Entity",
+			"meta-content",
 			"node-content",
 			"break",
 			"GetCoor",
@@ -412,6 +536,8 @@
 		"replace_history":
 		[
 			"",
+			"Doc",
+			"",
 			"Logger",
 			"C:/Program Files/python/",
 			"C:/Program Files/python",
@@ -431,33 +557,6 @@
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "README.md",
 					"semi_transient": false,
 					"settings":
@@ -481,11 +580,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "xml.md",
 					"semi_transient": false,
 					"settings":
@@ -509,7 +608,179 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "gexf.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1995,
+								1995
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1092.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/work/JIA/ipv6_nodes_num.num",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								663,
+								663
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "node.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "edge.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "attribute.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								653,
+								653
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "visualization.go",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -519,119 +790,181 @@
 			"sheets":
 			[
 				{
-					"buffer": 3,
-					"file": "doc/gexf-1.2/gexf.xsd",
+					"buffer": 8,
+					"file": "doc/gexf-1.2/rnc/gexf.rnc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3265,
+						"buffer_size": 2103,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								612,
-								1055
+								460,
+								460
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "doc/gexf-1.2/data.xsd",
+					"buffer": 9,
+					"file": "doc/gexf-1.2/rnc/data.rnc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5986,
+						"buffer_size": 1295,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								578,
-								578
+								880,
+								888
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "doc/gexf-1.2/dynamics.xsd",
+					"buffer": 10,
+					"file": "doc/gexf-1.2/rnc/dynamics.rnc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1504,
+						"buffer_size": 2050,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								685,
-								685
+								1321,
+								1309
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "doc/gexf-1.2/phylogenics.xsd",
+					"buffer": 11,
+					"file": "doc/gexf-1.2/rnc/hierarchy.rnc",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 844,
+						"buffer_size": 389,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								495,
-								486
+								362,
+								362
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 12,
+					"file": "doc/gexf-1.2/rnc/phylogenics.rnc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "doc/gexf-1.2/rnc/viz.rnc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 14,
 					"file": "doc/gexf-1.2/viz.xsd",
 					"semi_transient": false,
 					"settings":
@@ -643,8 +976,8 @@
 						"selection":
 						[
 							[
-								3881,
-								3881
+								2518,
+								2518
 							]
 						],
 						"settings":
@@ -652,38 +985,179 @@
 							"syntax": "Packages/XML/XML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1350.0,
+						"translation.y": 960.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "/C/Program Files/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+					"buffer": 15,
+					"file": "/E/Code/Go/src/mervin.me/cn-post-network/xml.go",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 149,
+						"buffer_size": 2362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								2296,
+								2094
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/GoSublime/syntax/GoSublime-Go.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "doc/gexf-1.2/phylogenics.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "doc/gexf-1.2/dynamics.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "doc/gexf-1.2/data.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2505,
+								2505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "doc/gexf-1.2/hierarchy.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "doc/gexf-1.2/gexf.xsd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
 					"type": "text"
 				}
 			]
@@ -712,12 +1186,19 @@
 				0,
 				2,
 				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.287401574803,
+			0.515714285714,
+			0.854166666667,
 			1.0
 		],
 		"rows":
@@ -789,14 +1270,14 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 156.0,
 	"status_bar_visible": true,
 	"template_settings":

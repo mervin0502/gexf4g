@@ -1,57 +1,58 @@
 package gexf4g
 
 import (
-	"encoding/xml"
+	//"encoding/xml"
 	"time"
 )
 
 //id type
-var IdType uint8
+type IdType uint8
 
 const (
-	Integer IdType = itoa
+	Integer IdType = iota
 	String
 )
 
 //mode type
-var ModeType uint8
+type ModeType uint8
 
 const (
-	Static ModeType = itoa
+	Static ModeType = iota
 	Dynamic
 )
 
 //root element: gexf
 type GexfDoc struct {
-	Name    xml.Name `xml:"gexf"`
-	Version float32  `xml:"version"`
+	XMLName struct{} `xml:"gexf"`
+	//Name    xml.Name `xml:"gexf"`
+	Version float32 `xml:"version,attr"`
 
-	xmlNS          string `xml:"xmlns, attr"`
-	xsi            string `xml:"xmlns:xsi, attr"`
-	schemaLocation string `xml:"xsi:SchemaLocation, attr"`
+	XmlNS          string `xml:"xmlns,attr"`
+	XSI            string `xml:"xmlns:xsi,attr"`
+	SchemaLocation string `xml:"xsi:SchemaLocation,attr"`
 
-	Meta  *MetaDoc  `xml:"meta, omitempty"`
+	Meta  *MetaDoc  `xml:"meta,omitempty"`
 	Graph *GraphDoc `xml:"graph"`
 }
 
 //gexf > meta
 type MetaDoc struct {
-	Name             xml.Name  `xml:meta`
-	LastModifiedDate time.Time `xml:"lastmodifeddata, attr, omitempty"`
-	Creator          string    `xml:"creator, omitempty"`
-	Keywords         string    `xml:"keywords, omitempty"`
-	Description      string    `xml:"description, omitempty"`
+	//Name             xml.Name  `xml:meta`
+	LastModifiedDate time.Time `xml:"lastmodifeddata,attr,omitempty"`
+	Creator          string    `xml:"creator,omitempty"`
+	Keywords         string    `xml:"keywords,omitempty"`
+	Description      string    `xml:"description,omitempty"`
 }
 
 //root > Graph
 type GraphDoc struct {
-	Name            xml.Name       `xml:"graph"`
-	DefualtEdgeType EdgeType       `xml:"defualtedgetype, omitempty,attr"`
-	IdType          IdType         `xml:"id-type, omitempty,attr"`
-	Mode            ModeType       `xml:"mode, omitempty,attr"`
-	Attributes      *AttributesDoc `xml:attributes, omitempty`
-	Nodes           NodesDoc       `xml:"nodes"`
-	Edges           []*EdgeDoc     `xml:"edges>edge`
+	//Name            xml.Name       `xml:"graph"`
+	DefualtEdgeType EdgeType      `xml:"defualtedgetype,attr,omitempty"`
+	IdType          IdType        `xml:"id-type,attr,omitempty"`
+	Mode            ModeType      `xml:"mode,attr,omitempty"`
+	Attributes      AttributesDoc `xml:"attributes,omitempty"`
+	Nodes           NodesDoc      `xml:"nodes"`
+	Edges           EdgesDoc      `xml:"edges"`
 }
 
 //initialize the gexf document
@@ -72,13 +73,13 @@ func NewGexfDoc() *GexfDoc {
 //===========================================================
 
 // set meta
-func (this *GexfDoc) SetMeta(_meta MetaDoc) {
+func (this *GexfDoc) SetMeta(_meta *MetaDoc) {
 	this.Meta = _meta
 }
 
 //get meta
 func (this *GexfDoc) GetMeta() *MetaDoc {
-	this.Meta = MetaDoc{}
+	//this.Meta = MetaDoc{}
 	return this.Meta
 }
 
@@ -88,37 +89,37 @@ func (m *MetaDoc) SetLastModefiedDate(_date time.Time) {
 }
 
 //get meta lastmodefieddate
-func (m *MetaDoc) SetLastModefiedDate() time.Time {
+func (m *MetaDoc) GetLastModefiedDate() time.Time {
 	return m.LastModifiedDate
 }
 
 //set meta creator
-func (m *MetaDoc) SetLastModefiedDate(_creator string) {
+func (m *MetaDoc) SetCreator(_creator string) {
 	m.Creator = _creator
 }
 
 //get meta creator
-func (m *MetaDoc) SetLastModefiedDate() string {
+func (m *MetaDoc) GetCreator() string {
 	return m.Creator
 }
 
 //set meta keywords
-func (m *MetaDoc) SetLastModefiedDate(_keywords string) {
+func (m *MetaDoc) SetKeywords(_keywords string) {
 	m.Keywords = _keywords
 }
 
 //get meta keywords
-func (m *MetaDoc) SetLastModefiedDate() string {
+func (m *MetaDoc) GetKeyword() string {
 	return m.Keywords
 }
 
 //set meta description
-func (m *MetaDoc) SetLastModefiedDate(_description string) {
+func (m *MetaDoc) SetDescription(_description string) {
 	m.Description = _description
 }
 
 //get meta keywords
-func (m *MetaDoc) SetLastModefiedDate() string {
+func (m *MetaDoc) GetDescription() string {
 	return m.Description
 }
 
