@@ -1,8 +1,6 @@
 package gexf4g
 
-import (
 //"encoding/xml"
-)
 
 // edge type
 type EdgeType uint8
@@ -35,4 +33,5 @@ type EdgeElement struct {
 	Test   int     `xml:"test,omitempty"`
 	//TODO:why?
 	//AttValues AttValuesDoc `xml:"attvalues,omitempty"`
+	AttValues AttValuesDoc `xml:"attvalues,omitempty"`
 }

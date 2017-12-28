@@ -1,7 +1,8 @@
 package gexf4g
 
 import (
-	//"encoding/xml"
+	"encoding/xml"
+	"os"
 	"time"
 )
 
@@ -47,12 +48,14 @@ type MetaDoc struct {
 //root > Graph
 type GraphDoc struct {
 	//Name            xml.Name       `xml:"graph"`
-	DefualtEdgeType EdgeType      `xml:"defualtedgetype,attr,omitempty"`
-	IdType          IdType        `xml:"id-type,attr,omitempty"`
-	Mode            ModeType      `xml:"mode,attr,omitempty"`
-	Attributes      AttributesDoc `xml:"attributes,omitempty"`
-	Nodes           NodesDoc      `xml:"nodes"`
-	Edges           EdgesDoc      `xml:"edges"`
+	DefualtEdgeType EdgeType `xml:"defualtedgetype,attr,omitempty"`
+	IdType          IdType   `xml:"id-type,attr,omitempty"`
+	Mode            ModeType `xml:"mode,attr,omitempty"`
+	// NodeAttributes  *AttributesDoc `xml:"attributes,omitempty"`
+	// EdgeAttributes  *AttributesDoc `xml:"attributes,omitempty"`
+	Attributes []*AttributesDoc
+	Nodes      *NodesDoc `xml:"nodes"`
+	Edges      *EdgesDoc `xml:"edges"`
 }
 
 //initialize the gexf document
@@ -71,58 +74,156 @@ func NewGexfDoc() *GexfDoc {
 //===========================================================
 // meta
 //===========================================================
-
-// set meta
-func (this *GexfDoc) SetMeta(_meta *MetaDoc) {
-	this.Meta = _meta
-}
-
-//get meta
-func (this *GexfDoc) GetMeta() *MetaDoc {
-	//this.Meta = MetaDoc{}
-	return this.Meta
-}
-
-//set meta lastmodefieddate
-func (m *MetaDoc) SetLastModefiedDate(_date time.Time) {
-	m.LastModifiedDate = _date
-}
-
-//get meta lastmodefieddate
-func (m *MetaDoc) GetLastModefiedDate() time.Time {
-	return m.LastModifiedDate
-}
-
-//set meta creator
-func (m *MetaDoc) SetCreator(_creator string) {
-	m.Creator = _creator
-}
-
-//get meta creator
-func (m *MetaDoc) GetCreator() string {
-	return m.Creator
-}
-
-//set meta keywords
-func (m *MetaDoc) SetKeywords(_keywords string) {
-	m.Keywords = _keywords
-}
-
-//get meta keywords
-func (m *MetaDoc) GetKeyword() string {
-	return m.Keywords
-}
-
-//set meta description
-func (m *MetaDoc) SetDescription(_description string) {
-	m.Description = _description
-}
-
-//get meta keywords
-func (m *MetaDoc) GetDescription() string {
-	return m.Description
+//SetMeta
+func (gexf *GexfDoc) SetMeta(t time.Time, creator, keywords, description string) {
+	gexf.Meta = &MetaDoc{
+		LastModifiedDate: t,
+		Creator:          creator,
+		Keywords:         keywords,
+		Description:      description,
+	}
 }
 
 //===========================================================
 // Graph
 //===========================================================
+//SetGraph
+func (gexf *GexfDoc) SetGraph(edgeType EdgeType, idType IdType, modeType ModeType) *GraphDoc {
+	gexf.Graph = &GraphDoc{
+		DefualtEdgeType: edgeType,
+		IdType:          idType,
+		Mode:            modeType,
+		Nodes:           &NodesDoc{Count: 0, Nodes: make([]*NodeElement, 0)},
+		Edges:           &EdgesDoc{Count: 0, Edges: make([]*EdgeElement, 0)},
+	}
+	return gexf.Graph
+}
+
+//SetAttribute
+func (graph *GraphDoc) SetAttribute(class ClassType) *AttributesDoc {
+
+	if graph.Attributes == nil {
+		graph.Attributes = make([]*AttributesDoc, 2)
+	}
+	var c string
+	if class == NodeClassType {
+		if graph.Attributes[0] == nil {
+			c = "node"
+			graph.Attributes[0] = &AttributesDoc{
+				Class:     c,
+				Attribute: make([]*AttributeElement, 0),
+			}
+		}
+		return graph.Attributes[0]
+	}
+	if class == EdgeClassType {
+		if graph.Attributes[1] == nil {
+			c = "edge"
+			graph.Attributes[1] = &AttributesDoc{
+				Class:     c,
+				Attribute: make([]*AttributeElement, 0),
+			}
+		}
+		return graph.Attributes[1]
+	}
+	return nil
+}
+
+//GetAttribute
+func (graph *GraphDoc) GetAttribute(class ClassType) *AttributesDoc {
+
+	if class == NodeClassType {
+		return graph.Attributes[0]
+	} else if class == EdgeClassType {
+		return graph.Attributes[1]
+	} else {
+		return nil
+	}
+}
+
+//AddNode
+func (graph *GraphDoc) AddNode(id int, label string) {
+	graph.Nodes.Count = graph.Nodes.Count + 1
+	e := &NodeElement{
+		Id:    id,
+		Label: label,
+	}
+	graph.Nodes.Nodes = append(graph.Nodes.Nodes, e)
+}
+
+//AddNodeWithAttribute
+func (graph *GraphDoc) AddNodeWithAttribute(id int, label string, attrs map[int]interface{}) {
+	graph.Nodes.Count = graph.Nodes.Count + 1
+	attValues := AttValuesDoc{
+		Values: make([]*AttrValueElement, len(attrs)),
+	}
+	for k, v := range attrs {
+		att := &AttrValueElement{
+			For:   k,
+			Value: v,
+		}
+		attValues.Values = append(attValues.Values, att)
+	}
+	e := &NodeElement{
+		Id:        id,
+		Label:     label,
+		AttValues: attValues,
+	}
+	graph.Nodes.Nodes = append(graph.Nodes.Nodes, e)
+}
+
+//AddEdge
+func (graph *GraphDoc) AddEdge(id, src, tar int) *EdgeElement {
+	graph.Edges.Count = graph.Edges.Count + 1
+	e := &EdgeElement{
+		Id:     id,
+		Source: src,
+		Target: tar,
+	}
+	graph.Edges.Edges = append(graph.Edges.Edges, e)
+	return e
+}
+
+//AddEdge
+func (graph *GraphDoc) AddEdgeWithAttribute(id, src, tar int, attrs map[int]interface{}) *EdgeElement {
+	graph.Edges.Count = graph.Edges.Count + 1
+	attValues := AttValuesDoc{
+		Values: make([]*AttrValueElement, len(attrs)),
+	}
+	for k, v := range attrs {
+		att := &AttrValueElement{
+			For:   k,
+			Value: v,
+		}
+		attValues.Values = append(attValues.Values, att)
+	}
+	e := &EdgeElement{
+		Id:        id,
+		Source:    src,
+		Target:    tar,
+		AttValues: attValues,
+	}
+	graph.Edges.Edges = append(graph.Edges.Edges, e)
+	return e
+}
+
+//========================================================
+//
+//========================================================
+//Marshal
+func (gexf *GexfDoc) Marshal() ([]byte, error) {
+	return xml.Marshal(gexf)
+}
+
+//MarshalToFile
+func (gexf *GexfDoc) MarshalToFile(file string) {
+	bytes, err := xml.Marshal(gexf)
+	if err != nil {
+		panic(err)
+	}
+	f, err := os.Create(file)
+	if err != nil {
+		panic(err)
+	}
+	f.Write(bytes)
+}

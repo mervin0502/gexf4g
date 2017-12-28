@@ -1,8 +1,6 @@
 package gexf4g
 
-import (
 //"encoding/xml"
-)
 
 //root > graph > nodes
 type NodesDoc struct {

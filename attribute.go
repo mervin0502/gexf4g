@@ -1,8 +1,6 @@
 package gexf4g
 
-import (
 //"encoding/xml"
-)
 
 //class type
 type ClassType uint8
@@ -56,4 +54,25 @@ type AttrValueElement struct {
 	//Name  xml.Name    `xml:"attvalue"`
 	For   int         `xml:"for,attr"`
 	Value interface{} `xml:"value,attr"`
+}
+
+//
+func (a *AttributesDoc) Add(id int, title, _type string) *AttributeElement {
+	e := &AttributeElement{
+		Id:    id,
+		Title: title,
+		Type:  _type,
+	}
+	a.Attribute = append(a.Attribute, e)
+	return e
+}
+
+//Get
+func (a *AttributesDoc) Get(title string) (int, string) {
+	for _, att := range a.Attribute {
+		if att.Title == title {
+			return att.Id, att.Type
+		}
+	}
+	return -1, ""
 }
