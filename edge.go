@@ -35,3 +35,17 @@ type EdgeElement struct {
 	//AttValues AttValuesDoc `xml:"attvalues,omitempty"`
 	AttValues AttValuesDoc `xml:"attvalues,omitempty"`
 }
+
+func (e EdgeType) String() string {
+	_t := "directed"
+	switch e {
+	case Directed:
+		_t = "directed"
+		break
+	case Undirected:
+		_t = "undirected"
+	default:
+		_t = "directed"
+	}
+	return _t
+}

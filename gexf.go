@@ -6,22 +6,6 @@ import (
 	"time"
 )
 
-//id type
-type IdType uint8
-
-const (
-	Integer IdType = iota
-	String
-)
-
-//mode type
-type ModeType uint8
-
-const (
-	Static ModeType = iota
-	Dynamic
-)
-
 //root element: gexf
 type GexfDoc struct {
 	XMLName struct{} `xml:"gexf"`
@@ -48,9 +32,12 @@ type MetaDoc struct {
 //root > Graph
 type GraphDoc struct {
 	//Name            xml.Name       `xml:"graph"`
-	DefualtEdgeType EdgeType `xml:"defualtedgetype,attr,omitempty"`
-	IdType          IdType   `xml:"id-type,attr,omitempty"`
-	Mode            ModeType `xml:"mode,attr,omitempty"`
+	DefualtEdgeType    EdgeType
+	DefualtEdgeTypeStr string `xml:"defaultedgetype,attr"`
+	IdType             IdType
+	IdTypeStr          string `xml:"id-type,attr"`
+	Mode               ModeType
+	ModeStr            string `xml:"mode,attr"`
 	// NodeAttributes  *AttributesDoc `xml:"attributes,omitempty"`
 	// EdgeAttributes  *AttributesDoc `xml:"attributes,omitempty"`
 	Attributes []*AttributesDoc
@@ -90,11 +77,14 @@ func (gexf *GexfDoc) SetMeta(t time.Time, creator, keywords, description string)
 //SetGraph
 func (gexf *GexfDoc) SetGraph(edgeType EdgeType, idType IdType, modeType ModeType) *GraphDoc {
 	gexf.Graph = &GraphDoc{
-		DefualtEdgeType: edgeType,
-		IdType:          idType,
-		Mode:            modeType,
-		Nodes:           &NodesDoc{Count: 0, Nodes: make([]*NodeElement, 0)},
-		Edges:           &EdgesDoc{Count: 0, Edges: make([]*EdgeElement, 0)},
+		DefualtEdgeType:    edgeType,
+		DefualtEdgeTypeStr: edgeType.String(),
+		IdType:             idType,
+		IdTypeStr:          idType.String(),
+		Mode:               modeType,
+		ModeStr:            modeType.String(),
+		Nodes:              &NodesDoc{Count: 0, Nodes: make([]*NodeElement, 0)},
+		Edges:              &EdgesDoc{Count: 0, Edges: make([]*EdgeElement, 0)},
 	}
 	return gexf.Graph
 }
